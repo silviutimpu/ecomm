@@ -21,18 +21,18 @@ const Header = ({ currentUser, hidden }) => (
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
-        SHOP
+        MAGAZIN
       </Link>
       <Link className='option' to='/contact'>
         CONTACT
       </Link>
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>
-          SIGN OUT
+          PĂRĂSEȘTE CONTUL
         </div>
       ) : (
         <Link className='option' to='/signin'>
-          SIGN IN
+          INTRĂ ÎN CONT
         </Link>
       )}
       <CartIcon/>
