@@ -50,3 +50,33 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .collection-item {
+    width: 20vw;
+
+    .image {
+      width: 200px;
+    }
+    .custom-button {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+      font-size: 8px;
+      width: 100px;
+    }
+    .collection-footer {
+      font-size: 15px;
+      width: 100%;
+      margin-right: 10px;
+    }
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
+    }
+  }
+}
